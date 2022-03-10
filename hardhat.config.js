@@ -2,8 +2,7 @@
  * @type import('hardhat/config').HardhatUserConfig
  */
 
- import dotenv from 'dotenv'
- dotenv.config()
+require('dotenv').config({path:__dirname+'/.env'})
 //loads dotenv information
 require('@nomiclabs/hardhat-ethers')
 // helps with deploy script
